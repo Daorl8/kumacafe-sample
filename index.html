@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='8' cy='9' r='4' fill='%237A4E28'/%3E%3Ccircle cx='24' cy='9' r='4' fill='%237A4E28'/%3E%3Ccircle cx='16' cy='17' r='10' fill='%23A9764E'/%3E%3Ccircle cx='12' cy='15' r='1.6' fill='%233A2417'/%3E%3Ccircle cx='20' cy='15' r='1.6' fill='%233A2417'/%3E%3Cellipse cx='16' cy='20' rx='5' ry='4' fill='%23E8D3B0'/%3E%3Ccircle cx='16' cy='19' r='1.5' fill='%233A2417'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Jua&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Gamja+Flower&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"쿠마카페","alternateName":"kuma cafe","description":"오사카 츠지제과학교 졸업생이 운영하는 원주의 일본 감성 베이커리 카페.","image":"https://kumacafe-sample.lgt3232.workers.dev/hero.jpg","url":"https://kumacafe-sample.lgt3232.workers.dev/","servesCuisine":["Cafe","Bakery","Japanese"],"areaServed":"원주시","address":{"@type":"PostalAddress","streetAddress":"앙월길 11-12 1층","addressLocality":"원주시","addressRegion":"강원특별자치도","addressCountry":"KR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"21:00"}],"sameAs":["https://www.instagram.com/kumacafe.__/"]}
@@ -25,17 +25,17 @@
 :root{
  --cream:#F6ECDC; --cream2:#EFDFC8; --card:#FCF6EB; --ink:#48311F; --ink2:#7C6450; --faint:#7B6650;
  --line:#E6D5B9; --line2:#F0E4CF;
- --caramel:#B57E4E; --caramel-tx:#8A5A2E; --cocoa:#5A3B26; --cta:#7A4E28; --cta-h:#653F1F; --berry:#CE7E76; --honey:#E7B15A;
+ --caramel:#B57E4E; --caramel-tx:#8A5A2E; --cocoa:#5A3B26; --cta:#7A4E28; --cta-h:#653F1F; --berry:#CE7E76; --honey:#E7B15A; --hl:#FBE7B0;
  --disp:'Fredoka',system-ui,sans-serif;
- --kd:'Jua',system-ui,sans-serif;
+ --kd:'Gamja Flower',system-ui,sans-serif;
  --jp:'Mochiy Pop One',system-ui,sans-serif;
  --body:'Pretendard Variable',Pretendard,system-ui,-apple-system,'Segoe UI',sans-serif;
  --bar:64px;
 }
 html{scroll-behavior:auto;scroll-padding-top:80px;overflow-x:clip}
 body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
- background-image:radial-gradient(var(--cream2) 1.4px,transparent 1.4px);background-size:22px 22px}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55;
+ background-image:radial-gradient(#E3CDA1 2px,transparent 2px);background-size:24px 24px}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
@@ -73,10 +73,10 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(246,236,220,.92);bac
 .hero-logo{width:96px;height:96px;border-radius:50%;box-shadow:0 10px 26px -14px rgba(72,49,31,.5);margin-bottom:12px;background:var(--card)}
 .eyebrow{font-family:var(--jp);font-size:1.15rem;color:var(--caramel-tx);letter-spacing:.04em;margin-bottom:6px}
 .hero h1{font-family:var(--disp);font-weight:700;font-size:clamp(2.4rem,9vw,3.9rem);line-height:.98;color:var(--cocoa);letter-spacing:.005em}
-.hero h1 .ko{display:block;font-family:var(--kd);font-weight:400;font-size:clamp(1.4rem,5vw,2rem);color:var(--ink);margin-top:8px;letter-spacing:.02em}
+.hero h1 .ko{display:block;font-family:var(--kd);font-weight:400;font-size:clamp(1.75rem,6vw,2.5rem);color:var(--ink);margin-top:6px;letter-spacing:.01em}
 .hero p.lead{font-size:1rem;color:var(--ink2);max-width:34ch;margin-top:16px}
 .badges{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:20px}
-.badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--kd);font-size:1.05rem;color:var(--cocoa);background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:5px 15px}
+.badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--kd);font-size:1.3rem;color:var(--ink);background:var(--hl);border:0;border-radius:999px;padding:5px 17px}
 .badge svg{width:16px;height:16px;flex:0 0 auto}
 .btnrow{display:flex;flex-wrap:wrap;gap:11px;margin-top:22px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:48px;padding:0 22px;border-radius:999px;font-family:var(--disp);font-weight:600;font-size:.95rem;box-sizing:border-box;white-space:nowrap;transition:background .2s,transform .15s,border-color .2s,color .2s}
@@ -105,7 +105,7 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(246,236,220,.92);bac
 .about p.big{font-size:1.02rem;color:var(--ink);margin-top:14px}
 .about p.small{font-size:.93rem;color:var(--ink2);margin-top:10px}
 .chiprow{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.chip{font-family:var(--kd);font-size:.92rem;padding:5px 14px;border-radius:999px;background:var(--cream2);color:var(--cocoa)}
+.chip{font-family:var(--kd);font-size:1.12rem;padding:4px 15px;border-radius:999px;background:var(--cream2);color:var(--cocoa)}
 
 /* menu */
 .mgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
@@ -116,9 +116,9 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(246,236,220,.92);bac
 .mcard:hover .ph img{transform:scale(1.06)}
 .mcard .tx{padding:13px 15px 16px}
 .mcard .en{font-family:var(--disp);font-weight:600;font-size:1.02rem;color:var(--cocoa);line-height:1.15}
-.mcard .ko{font-family:var(--kd);font-size:1rem;color:var(--ink2);margin-top:2px}
-.mcard .pr{display:inline-block;margin-top:9px;font-family:var(--disp);font-weight:600;font-size:.95rem;color:#fff;background:var(--cta);border-radius:999px;padding:3px 12px}
-.note{margin-top:20px;font-family:var(--kd);font-size:1.05rem;color:var(--faint);text-align:center}
+.mcard .ko{font-family:var(--kd);font-size:1.2rem;color:var(--ink2);margin-top:1px;line-height:1.15}
+.mcard .pr{display:inline-block;margin-top:8px;font-family:var(--disp);font-weight:600;font-size:.95rem;color:var(--ink);background:var(--hl);border-radius:999px;padding:3px 13px}
+.note{margin-top:20px;font-family:var(--kd);font-size:1.3rem;color:var(--faint);text-align:center}
 
 /* gallery */
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
@@ -155,7 +155,7 @@ footer .soc{display:flex;justify-content:center;gap:16px;margin:12px 0;font-fami
 footer .soc a{color:var(--ink2);border-bottom:1.5px solid transparent;transition:border-color .2s}
 footer .soc a:hover{border-color:var(--caramel)}
 footer .fnote{font-size:.78rem;color:var(--faint);margin-top:8px;line-height:1.6}
-footer .demo2{font-family:var(--kd);font-size:1rem;color:var(--cta);margin-top:12px}
+footer .demo2{font-family:var(--kd);font-size:1.2rem;color:var(--cta);margin-top:12px}
 
 /* mobile quickbar */
 .qbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:flex;gap:9px;padding:9px 14px calc(9px + env(safe-area-inset-bottom));background:rgba(246,236,220,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
